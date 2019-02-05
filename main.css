@@ -54,7 +54,6 @@ body {
 
 .section__info_view{
     width: 600px;
-
 }
 
 /* BUTTON */
@@ -63,6 +62,7 @@ body {
   font-family: 'Rotonda';
   font-size: 16px;
   margin: 20px;
+  background: #F37B3B;
 }
 
 .section__info_btn:hover{
@@ -119,4 +119,50 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 760px) {
+  .section__info_view{
+      width: 400px;
+  }
+}
+
+
+@media screen and (max-width: 510px) {
+  .section__info_view{
+      width: 300px;
+  }
+
+  #modal {
+      position: absolute;
+      z-index: 20;
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      top: calc(50% - 150px);
+      left: calc(50% - 150px);
+      border: 2px solid #900;
+      line-height: 200px;
+      text-align: center;
+      background: #FFF;
+}
+
+
+@media screen and (max-width: 390px) {
+  .section__info_view{
+      width: 200px;
+  }
+  #modal {
+      position: absolute;
+      z-index: 20;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      top: calc(50% - 100px);
+      left: calc(50% - 100px);
+      border: 2px solid #900;
+      line-height: 200px;
+      text-align: center;
+      background: #FFF;
+}
 }
